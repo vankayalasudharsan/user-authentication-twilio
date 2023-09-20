@@ -21,15 +21,15 @@ Here's a brief Information of how it works This will help you understand how it'
 - **Database Design**: it contains database design like draw.io file.
 
 ## Dependencies used
-Express: A web framework for building the API.
-Twilio: Used for sending and verifying OTP codes via SMS.
-pg: Helps interact with postgres, database.
-dotenv: Loads environment variables from a .env file.
-body-parser: Parses incoming request data.
-jsonwebtoken: Creates and verifies JSON Web Tokens (JWT).
-bcryptjs: Encrypts and validates user passwords securely.
-ipinfo:Useful for tasks like IP address validation and manipulation.
-sequelize: used for querying with database.
+- **Express**: A web framework for building the API.
+- **Twilio**: Used for sending and verifying OTP codes via SMS.
+- **pg**: Helps interact with postgres, database.
+- **dotenv**: Loads environment variables from a .env file.
+- **body-parser**: Parses incoming request data.
+- **jsonwebtoken**: Creates and verifies JSON Web Tokens (JWT).
+- **bcryptjs**: Encrypts and validates user passwords securely.
+- **ipinfo**:Useful for tasks like IP address validation and manipulation.
+- **sequelize**: used for querying with database.
 
 
 ## Getting Started
