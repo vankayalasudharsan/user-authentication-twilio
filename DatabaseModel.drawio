@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" modified="2023-09-20T05:17:06.600Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="yCXIEQdQ3EWIJsD_MrzH" version="21.7.5" type="google">
+  <diagram name="Page-1" id="NMoOlxfowIysDAeVP0L9">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ERS3qirw90-EBlFMn_HH-1" value="Users " style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="230" height="251" as="geometry">
+            <mxRectangle x="80" y="70" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-2" value="id - primary key,UUID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-13" value="ipAddress - Varchar(250)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="52" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-17" value="user_name-string" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="80" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-18" value="password-string" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="108" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-6" value="phone_number-string" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="136" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-15" value="otp-string" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="164" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-11" value="createdAt - timestamps" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="192" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-12" value="updatedAt - timestamps" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="ERS3qirw90-EBlFMn_HH-1">
+          <mxGeometry y="218" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ERS3qirw90-EBlFMn_HH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="ERS3qirw90-EBlFMn_HH-1" source="ERS3qirw90-EBlFMn_HH-11" target="ERS3qirw90-EBlFMn_HH-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

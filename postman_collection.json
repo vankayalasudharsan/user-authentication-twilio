@@ -1,0 +1,1204 @@
+{
+	"info": {
+		"_postman_id": "479c0b45-d64e-4188-9def-38818bf074c6",
+		"name": "Retrurn Journey LLP Assingment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27034689"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"item": [
+				{
+					"name": "Verify Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\":\"Sudharsan\",\r\n    \"password\":\"Siddu@123\",\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"807704\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user-registration/verify-otp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-registration",
+								"verify-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Srong Paasword Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\":\"Sudharsan\",\r\n    \"password\":\"Siddu123\",\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"479078\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/verify-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"verify-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "179"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b3-K4IUxSCvlmQ8Rp7YYDH8fdbYx3I\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:03:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"password should contain only uppercase letters, lowercase letters, digits, and the specified special characters, with a minimum length of 8 characters\"\n}"
+						},
+						{
+							"name": "Invalid Otp Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\":\"Sudharsan\",\r\n    \"password\":\"Siddu@123\",\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"479078\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/verify-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"verify-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-mazKl/9bfYr1gVhlEzW/IfnLBrc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:04:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Invalid Otp\"\n}"
+						},
+						{
+							"name": "Success Otp Verified User Registered Successfully",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\":\"Sudharsan\",\r\n    \"password\":\"Siddu@123\",\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"807704\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/verify-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"verify-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "227"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e3-7E5STY1qf9nJ6QH24ZPK+8Ixmg0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:05:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Otp Verified\",\n    \"data\": {\n        \"jwtToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM2MGE3NGUzLWJlOWUtNGMwOS1iYmRkLWUzMGI1MzYyY2UwMSIsImlhdCI6MTY5NTE4NjM1MH0.wJQNpx6lVE3IZSgB9FGh1pbmJBeNsoRkiplNySdktk0\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Send Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone_number\": \"+918688488126\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user-registration/send-otp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-registration",
+								"send-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Duplicate User Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\": \"+918688488126\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/send-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"send-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-am9UXABTrwh0+j3T88c+x0T7WI0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:00:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"This phone number has already Used For Registartion\"\n}"
+						},
+						{
+							"name": "Invalid PhoneNumber Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\": \"+9186884881abc\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/send-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"send-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6d-+o0qt7lb2IK9xPbvTreE95uuRuA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:00:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Invalid Phone Number Format Should be +91XXXXXXXXXX And all should be Numericals\"\n}"
+						},
+						{
+							"name": "Validation Error Missing Required Data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/send-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"send-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-z3hnSDrkmsZQb3Xa/NOYiw6eNls\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:01:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Missing Phone Number\"\n}"
+						},
+						{
+							"name": "Success Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\": \"+918688488126\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-registration/send-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-registration",
+										"send-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-mVj0UX0pvEFS4kIhcQFd52oOQv0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:02:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Otp Sent Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login Using Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone_number\":\"+918688488126\",\r\n    \"password\":\"Siddu@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user-authentication/login-password",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-authentication",
+								"login-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Not Found Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\":\"+918688488125\",\r\n    \"password\":\"Siddu@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-password",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-password"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4d-BKDhT5ZCzCQDHzdAQ3hK58oaFmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:06:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"No User Found Registered With That Mobile Number\"\n}"
+						},
+						{
+							"name": "Ivalid Password Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\":\"+918688488126\",\r\n    \"password\":\"Siddu123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-password",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-password"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-XTC4uHKchDGqS1XFDTq4XXvNpkc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:07:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Invalid Password\"\n}"
+						},
+						{
+							"name": "Success And Access token Generated",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\":\"+918688488126\",\r\n    \"password\":\"Siddu@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-password",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "228"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e4-ydlUrDfkog1V0HlPP+ViEJlvHZM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:07:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Login Success\",\n    \"data\": {\n        \"jwtToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM2MGE3NGUzLWJlOWUtNGMwOS1iYmRkLWUzMGI1MzYyY2UwMSIsImlhdCI6MTY5NTE4NjQ3MX0.FpeUVhSiWzf38hCEqH9-kXGrv9b8Y9TnGVgVprXnW1w\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login Send Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone_number\" :\"+918688488126\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user-authentication/login-send-otp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-authentication",
+								"login-send-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Not Found Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\" :\"+918688488125\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-send-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-send-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4d-hbJq3pENyKYH+tHww5npJLtagCA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:08:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"NO User Found Registered With That Mobile Number\"\n}"
+						},
+						{
+							"name": "Success Response Login otp Sent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\" :\"+918688488126\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-send-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-send-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-mVj0UX0pvEFS4kIhcQFd52oOQv0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:09:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Otp Sent Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login Verify Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"618519\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user-authentication/login-verify-otp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-authentication",
+								"login-verify-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Invalid Otp Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"784319\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-verify-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-verify-otp"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-mazKl/9bfYr1gVhlEzW/IfnLBrc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:10:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Invalid Otp\"\n}"
+						},
+						{
+							"name": "Success Login Access Generated",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\":\"+918688488126\",\r\n    \"otpCode\":\"618519\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user-authentication/login-verify-otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user-authentication",
+										"login-verify-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "245"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f5-iZzNr3iwxvq9CbWYUqboGtkGOKk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:11:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Otp Verified And Login Success\",\n    \"data\": {\n        \"jwtToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM2MGE3NGUzLWJlOWUtNGMwOS1iYmRkLWUzMGI1MzYyY2UwMSIsImlhdCI6MTY5NTE4NjY3N30.c4RUmZdKUuC4kOzzthh5WDmjCJGF9Yg-sRg2a91o1DA\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Registered User List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwOGEwMDRkLTRkZWItNDZlNC1iNDQ2LTU0M2YzNjRkYzc1MSIsImlhdCI6MTY5NTE4NDY2NX0.ZtoajMVk5z3jyFbPcEMaD16VB043AlLJP-q-Fm87K4o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Access Token Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"list"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-zIHquUUIZh75gxsWXHMLErZ3QaM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:12:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Access Token Not Found\"\n}"
+						},
+						{
+							"name": "Invalid Access Token Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"list"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-MLrknwbxjuCQOQLXS8AEO4+l+Nw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:12:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Invalid Access Token\"\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "376"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"178-QZaSd+5MR0Nn3PuD2u0D7kRQjjE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Sep 2023 05:13:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Registered Users List Fetched Successfully\",\n    \"data\": [\n        {\n            \"id\": \"c60a74e3-be9e-4c09-bbdd-e30b5362ce01\",\n            \"ip_address\": \"192.168.160.1\",\n            \"user_name\": \"Sudharsan\",\n            \"phone_number\": \"+918688488126\",\n            \"password\": \"$2b$10$EPiSiIgoaUQlBfyIZx/Ldu6n3zEUFc72QayjT33vbN/AxHTexMtP6\",\n            \"otp\": \"807704\",\n            \"createdAt\": \"2023-09-20T05:05:50.154Z\",\n            \"updatedAt\": \"2023-09-20T05:05:50.154Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
